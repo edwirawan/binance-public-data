@@ -94,7 +94,7 @@ def download_daily_bookTicker(trading_type, symbols, num_symbols, dates, start_d
 
 
 if __name__ == "__main__":
-    parser = get_parser('aggTrades')
+    parser = get_parser(market_data_type)
     args = parser.parse_args(sys.argv[1:])
 
     if not args.symbols:
